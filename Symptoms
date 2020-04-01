@@ -84,7 +84,7 @@ import java.util.*;
    }
    
    System.out.println("\n\n\nImportant tips to prevent it:\n1)Stay at home\n2)Use mask\n3)Wash your hands with soap, \n or use acohol-base rub kills viruses\n  that may be on your hands.\n");
-   System.out.println("Thank you....Please give me a star");
-   System.out.println("Developed by Dave Enyi");
+   System.out.println("Thank you....Please give us a star");
+   System.out.println("Developed by Covid Center");
    }
  }
