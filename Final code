@@ -1,0 +1,134 @@
+import random
+print('---------------------------------------------------------')  
+print("\t\tHELLO EVERY ONE")
+print('----------------------------------------------------------')
+
+import datetime
+now=datetime.datetime.now()
+print(now.strftime("\t\tDATE:%d-%B-%y TIME:%H:%M:%S"))
+
+print('--------------------------------------------------------')
+print("\t\tCORONA CHECKER")
+print("--------------------------------------------------------")
+
+import socket
+hostname = socket.gethostname()
+print("\t\tYOUR HOSTNAME AND IP ADDRESS")
+print('\t\tHOSTNAME:'+hostname)
+ip_address=socket.gethostbyname(hostname)
+print('\t\tIP ADDRESS:'+ip_address)
+
+print("--------------------------------------------------------")
+
+def hello():
+  print('                        COVID-19 \n ')
+  
+  num = int(input(" type 1 if you want to see how to protect yourself \n--------------------------------------------\n type 2 if you want to see the symptoms of COVID 19 \n-----------------------------------------------\ntype 3 if you want to check your health for corona  "))
+  if num == 1:
+    print("\n                 protection\n - Make sure to wash your hands frequently \n - Make sure to stay at home when you can \n - Make sure to keep your distance from other people if you go out or if someone came to your place")
+  elif num == 2:
+    print("\nThese symptoms may appear 2-14 days after exposure : \n - Fever \n - Cough \n - Shortness of breath")
+  elif num == 3 :
+    print("----------------------------------------------------------")
+    
+    check=int(input(" If you have fever  Type 1for  'yes' and 2 for 'No' "))
+    print("--------------------------------------------------------")
+    if check==1:
+      sub=int(input("If you have breathe problem Type 1 for 'yes' and 2 for 'No' "))
+      print("------------------------------------------------------")
+      if sub==1:
+        akshat=int(input("If you have any flu symtoms 1 for 'Yes' 2 for 'No' "))
+        print("-------------------------------------------------")
+        if akshat==1:
+          print("you have corona ")
+        else:
+          print("you have corona symtoms")
+          print("--------------------------------------------")
+      else:
+        mummy=int(input("If you have any flu symtoms type 1 for 'yes' and 2 for 'No' "))
+        if mummy==1:
+          print("you have corona symtoms")
+          print("---------------------------------------------")
+        else:
+          print("you have corona symtoms")
+          print("----------------------------------------------")
+    else:
+      tanay=int(input("If you have breathe problem Type 1 for 'Yes' and 2 for 'No' "))
+      print("-----------------------------------------------------")
+      if tanay==1 :
+        papa=int(input("If you have flu symtoms Type 1 for 'yes' and 2 for 'No' "))
+        print("-------------------------------------------------")
+        if papa==1:
+          print("you have corona symtoms")
+          print("--------------------------------------------")
+        else:
+          print("you have corona symtoms")
+          print("---------------------------------------------")
+      else:
+        chote=int(input("If you have any flu symtoms type 1 for 'yes' and 2 for 'No' "))
+        print("--------------------------------------------------")
+        if chote==1:
+          print("you have corona symtoms")
+          print("---------------------------------------------")
+        else:
+          print("you have no any symtoms")
+      print("----------------------------------------------------------")
+      
+    
+    
+  else:
+    print("make sure to enter 1 or 2 or 3")
+  
+hello()
+
+print("----------------------------------------------------------")
+print("\t \t if you have corona symtoms")
+print("\t 1.please contact to your near hospital ")
+print("\n \t2. please dial  +91-11-23978046")
+
+
+symtoms=int(input("\n\t\tIf you have not any symtoms Type 1"))
+if symtoms ==1:
+  
+    print("\n play game in quarantine:")
+    print("---------------------------------------")
+    game=int(input("\tType 1 if you want to play guess a number game \n ---------------------------------------------\n\tType 2 see which animal similar you are "))
+    if game==2:
+      import random
+      character=['Cock','Monkey','Cow','Tiger','Donkey','Buffalo','pig','elephant']
+      make=random.choice(character)
+      print(make)
+      
+      
+      
+    else:
+      wining_number = random.randint (1,100)
+      guess =1
+      number = int(input("guess a no.between 1 and 100:"))
+      game_over = False
+
+      while not game_over :
+        
+          
+        if number == wining_number :
+          
+          
+          print("you win,and you guessed in {} times".format(guess))
+          game_over = True
+        else:
+          
+           
+          if number < wining_number :
+            
+            print("too low ")
+      
+          else:  
+                
+            print("too high")
+        
+          guess=guess+1
+          number=int(input("guess again"))
+      
+else:
+  print("THANKS .............")
+
